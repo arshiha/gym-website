@@ -1,6 +1,6 @@
-/* body {
+body {
   background-color: #242b2e;
-} */
+}
 
 /* nav */
 * {
@@ -11,17 +11,21 @@
 }
 
 nav {
-  background-color: #0082e6;
+  /* background-color: #0082e6; */
   height: 80px;
   width: 100%;
 }
 
 label.logo {
-  color: white;
+  color: orange;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+}
+
+label.logo:hover {
+  color: orangered;
 }
 
 nav ul {
@@ -38,12 +42,13 @@ nav ul li a {
   font-size: 17px;
   padding: 7px 13px;
   border: 3px;
+  border-radius: 5px;
   text-transform: uppercase;
 }
 
 a.active,
 a:hover {
-  background-color: #1b9bff;
+  background-color: orangered;
   transition: 0.5s;
 }
 .checkbtn {
@@ -58,6 +63,8 @@ a:hover {
 #check {
   display: none;
 }
+
+/* responsive */
 
 @media (max-width: 952px) {
   label.logo {
@@ -98,4 +105,40 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
+}
+
+/* banner */
+
+.header {
+  color: orange;
+}
+h1 {
+  font-size: 38px;
+  color: white;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+p {
+  font-size: 20px;
+  color: lightgrey;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+section {
+  display: flex;
+}
+.sec-img img {
+  margin-top: 60px;
+  margin-right: 30px;
+}
+
+.link-btn {
+  margin-left: 100px;
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  padding: 4px 20px;
+  border-radius: 5px;
 }
